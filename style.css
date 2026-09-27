@@ -1,0 +1,422 @@
+/* ================================
+GENERAL STYLES
+================================ */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  }
+
+html {
+scroll-behavior: smooth;
+}
+
+body {
+font-family: Arial, sans-serif;
+background-color: #f4f7fb;
+color: #222;
+line-height: 1.6;
+}
+
+/* Element selector */
+h1,
+h2,
+h3 {
+margin-bottom: 15px;
+}
+
+/* Descendant selector */
+main section p {
+font-size: 17px;
+}
+
+/* ================================
+HEADER AND NAVIGATION
+================================ */
+
+header {
+background-color: #172a46;
+width: 100%;
+}
+
+.navbar {
+min-height: 70px;
+padding: 15px 8%;
+display: flex;
+justify-content: space-between;
+align-items: center;
+gap: 20px;
+}
+
+.logo {
+color: white;
+font-size: 24px;
+font-weight: bold;
+}
+
+.nav-links {
+display: flex;
+justify-content: center;
+align-items: center;
+gap: 25px;
+list-style: none;
+flex-wrap: wrap;
+}
+
+.nav-links li a {
+color: white;
+text-decoration: none;
+padding: 8px 12px;
+border-radius: 5px;
+}
+
+/* Pseudo-class :hover */
+.nav-links li a:hover {
+background-color: #2f80ed;
+}
+
+/* Pseudo-class :first-child */
+.nav-links li:first-child a {
+border-bottom: 2px solid white;
+}
+
+/* Pseudo-class :last-child */
+.nav-links li:last-child a {
+margin-right: 0;
+}
+
+/* ================================
+HERO SECTION
+================================ */
+
+.hero-section {
+width: 90%;
+max-width: 1200px;
+min-height: 500px;
+margin: 50px auto;
+padding: 50px;
+border: 1px solid #dce3ec;
+border-radius: 15px;
+background-color: white;
+
+display: flex;
+justify-content: space-between;
+align-items: center;
+gap: 50px;
+
+position: relative;
+
+}
+
+.hero-content {
+flex: 1;
+}
+
+.welcome-text {
+color: #2f80ed;
+font-weight: bold;
+letter-spacing: 2px;
+}
+
+.hero-content h1 {
+font-size: 44px;
+}
+
+.hero-content h1 span {
+color: #2f80ed;
+}
+
+.hero-content h2 {
+font-size: 24px;
+color: #555;
+}
+
+.hero-content p {
+margin-bottom: 25px;
+}
+
+.main-button {
+display: inline-block;
+background-color: #2f80ed;
+color: white;
+text-decoration: none;
+padding: 12px 22px;
+border-radius: 6px;
+}
+
+/* Pseudo-class :hover */
+.main-button:hover {
+background-color: #172a46;
+}
+
+/* Positioning example */
+.hero-image {
+position: relative;
+flex: 0 0 300px;
+}
+
+.hero-image img {
+width: 300px;
+height: 300px;
+object-fit: cover;
+border-radius: 50%;
+border: 6px solid #2f80ed;
+}
+
+/* ================================
+SKILLS SECTION
+================================ */
+
+.skills-section {
+width: 90%;
+max-width: 1200px;
+margin: 50px auto;
+padding: 40px;
+background-color: white;
+border: 1px solid #dce3ec;
+border-radius: 15px;
+text-align: center;
+}
+
+/* CSS Grid */
+.skills-container {
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+gap: 25px;
+margin-top: 25px;
+}
+
+.skill-card {
+min-height: 200px;
+padding: 25px;
+border: 1px solid #dce3ec;
+border-radius: 10px;
+background-color: #f8fafc;
+}
+
+/* Grouping selector */
+.skill-card h3,
+.programming-card h3 {
+color: #2f80ed;
+}
+
+/* Attribute selector */
+a[href$=".html"] {
+transition: 0.3s;
+}
+
+/* ================================
+ABOUT PAGE
+================================ */
+
+.about-section,
+.education-section,
+.programming-section,
+.learning-section {
+width: 90%;
+max-width: 1100px;
+margin: 40px auto;
+padding: 40px;
+background-color: white;
+border: 1px solid #dce3ec;
+border-radius: 15px;
+}
+
+.about-section {
+text-align: center;
+}
+
+.about-content {
+max-width: 800px;
+margin: 0 auto;
+}
+
+/* Child selector */
+.education-section > h2,
+.programming-section > h2,
+.learning-section > h2 {
+text-align: center;
+}
+
+.education-card {
+padding: 25px;
+margin-top: 20px;
+border-left: 5px solid #2f80ed;
+background-color: #f8fafc;
+}
+
+.programming-grid {
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+gap: 25px;
+}
+
+.programming-card {
+padding: 25px;
+min-height: 200px;
+border: 1px solid #dce3ec;
+border-radius: 10px;
+background-color: #f8fafc;
+}
+
+.learning-section ul {
+max-width: 700px;
+margin: 20px auto;
+padding-left: 30px;
+}
+
+.learning-section li {
+margin-bottom: 10px;
+}
+
+/* ================================
+CONTACT PAGE
+================================ */
+
+.contact-section {
+width: 90%;
+max-width: 800px;
+margin: 50px auto;
+padding: 40px;
+background-color: white;
+border: 1px solid #dce3ec;
+border-radius: 15px;
+}
+
+.contact-section h1,
+.contact-section > p {
+text-align: center;
+}
+
+.contact-form {
+margin-top: 30px;
+}
+
+.form-group {
+margin-bottom: 20px;
+}
+
+.form-group label {
+display: block;
+margin-bottom: 8px;
+font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select,
+textarea {
+width: 100%;
+padding: 12px;
+border: 1px solid #bfc9d6;
+border-radius: 6px;
+font-size: 16px;
+}
+
+/* Pseudo-class :focus */
+input:focus,
+select:focus,
+textarea:focus {
+outline: 2px solid #2f80ed;
+border-color: #2f80ed;
+}
+
+textarea {
+resize: vertical;
+}
+
+button[type="submit"] {
+width: 100%;
+padding: 13px;
+border: none;
+border-radius: 6px;
+background-color: #2f80ed;
+color: white;
+font-size: 17px;
+cursor: pointer;
+}
+
+/* Pseudo-class :hover */
+button[type="submit"]:hover {
+background-color: #172a46;
+}
+
+/* ================================
+FOOTER
+================================ */
+
+footer {
+margin-top: 50px;
+padding: 25px;
+background-color: #172a46;
+color: white;
+text-align: center;
+}
+
+/* ================================
+RESPONSIVE DESIGN
+================================ */
+
+@media (max-width: 768px) {
+
+
+.navbar {
+    flex-direction: column;
+    padding: 20px;
+}
+
+.hero-section {
+    flex-direction: column;
+    padding: 30px;
+    text-align: center;
+}
+
+.hero-content h1 {
+    font-size: 34px;
+}
+
+.hero-image {
+    flex-basis: auto;
+}
+
+.skills-container,
+.programming-grid {
+    grid-template-columns: 1fr;
+}
+
+.about-section,
+.education-section,
+.programming-section,
+.learning-section,
+.contact-section,
+.skills-section {
+    width: 94%;
+    padding: 25px;
+}
+
+.nav-links {
+    gap: 10px;
+}
+
+
+}
+
+@media (max-width: 480px) {
+
+.hero-content h1 {
+    font-size: 28px;
+}
+
+.hero-image img {
+    width: 220px;
+    height: 220px;
+}
+
+.nav-links {
+    flex-direction: column;
+}
+
+
+}
